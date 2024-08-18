@@ -1,0 +1,23 @@
+.AppLayout {
+  display: grid;
+  grid-template-areas:
+    'sidebar content'
+    'sidebar content';
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  grid-area: sidebar;
+  max-width: 284px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.content {
+  grid-area: content;
+  width: 100%;
+}
